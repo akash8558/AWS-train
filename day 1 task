@@ -4,8 +4,8 @@
 // 3. psm(args)
 // 4....
 
-check for the possibilities
-  1.
+
+  1.spvm(args)
   class Main
 {
  public static void main(String args[])
@@ -14,7 +14,7 @@ check for the possibilities
  }
 }
 output:hi
-  2.
+  2.without args
   class Main 
 {
  public static void main()
@@ -28,8 +28,16 @@ Error: Main method not found in class Main, please define the main method as:
 or a JavaFX application class must extend javafx.application.Application
 
 === Code Exited With Errors ===
-  3.
-  ERROR!
+  3.psm(args)
+class Main
+{
+ public static main(String[] args)
+ {
+   System.out.println("hi");
+ }
+}
+ 
+ERROR!
 /tmp/DeVcrOX6rU/Main.java:3: error: invalid method declaration; return type required
  public static main(String[] args)
                ^
