@@ -1,4 +1,4 @@
-Constructor
+1.Constructor
 
 public class TestConstructor {
 
@@ -8,7 +8,7 @@ public class TestConstructor {
 }
 
 
-Variable types
+2.Variable types
 class Variables
 {
    int a;
