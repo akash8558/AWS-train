@@ -6,3 +6,20 @@ public class TestConstructor {
 		Employee employee1=new Employee(); //
 	}
 }
+
+
+Variable types
+class Variables
+{
+   int a;
+   static int b ;
+
+ public static void main(String args[])
+  {
+    int c =4 ;
+    Variables  var = new Variables();
+   System.out.println(b); 
+   System.out.println(c); 
+   System.out.println(var.a);  
+  }
+}
