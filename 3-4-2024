@@ -1,0 +1,58 @@
+1.For infinite loop
+class Loop
+{
+  public static void main(String args[]){
+      int j=11;
+    for(;j>10;j++)
+     {
+       System.out.println("infinite"+j);
+     }
+}
+}
+output:
+infinite11
+infinite12
+infinite13
+infinite14
+infinite15
+infinite16
+infinite17
+infinite18
+infinite19
+infinite20
+infinite21
+infinite22
+infinite23
+....
+....
+...
+2.upto n prime numbers
+public class PrimeNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a positive integer (n): ");
+        int n = scanner.nextInt();
+        scanner.close();
+
+        System.out.println("Prime numbers up to " + n + ":");
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    // Function to check if a number is prime
+    private static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
