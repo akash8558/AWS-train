@@ -27,14 +27,14 @@ infinite23
 ....
 ...
 2.upto n prime numbers
-public class PrimeNumbers {
+    class PrimeNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive integer (n): ");
         int n = scanner.nextInt();
         scanner.close();
 
-        System.out.println("Prime numbers up to " + n + ":");
+       System.out.println("Prime numbers up to " + n + ":");
         for (int i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 System.out.print(i + " ");
@@ -43,7 +43,7 @@ public class PrimeNumbers {
     }
 
     // Function to check if a number is prime
-    private static boolean isPrime(int num) {
+    public static boolean isPrime(int num) {
         if (num <= 1) {
             return false;
         }
@@ -55,4 +55,20 @@ public class PrimeNumbers {
         return true;
     }
 }
+output:
+Enter a positive integer (n): 41
+Prime numbers up to 41:
+2 3 5 7 11 13 17 19 23 29 31 37 41 
+3.Nested if
 
+class NestedIf{
+        public static void main(String args[]){
+            int a = 10 , b = 20 ;
+            if( a == 10){
+                if(b == 30){
+                    System.out.println("a = " + a);
+                    System.out.println("a = " + a);   
+                }
+            }
+        }
+    }
