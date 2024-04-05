@@ -72,3 +72,29 @@ class NestedIf{
             }
         }
     }
+Unique String
+import java.util.HashSet;
+import java.util.Set;
+
+public class SubstringsCounter {
+    public static void main(String[] args) {
+        String input = "aaaa"; // Example input string
+
+        int count = countDistinctSubstrings(input);
+        System.out.println("Distinct Substrings: " + count);
+    }
+
+    private static int countDistinctSubstrings(String str) {
+        Set<String> uniqueSubstrings = new HashSet<>();
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i + 1; j <= str.length(); j++) {
+                uniqueSubstrings.add(str.substring(i, j));
+            }
+        }
+        return uniqueSubstrings.size();
+    }
+}
+
+
+OUTPUT:
+Distinct Substrings: 4
