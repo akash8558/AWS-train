@@ -1,0 +1,98 @@
+Task4 : Admin, Manager, Finance - idetify the parent class and implement inheritance
+
+Department (Parent class)
+     login() 
+     logout()   
+     company() 
+     info()
+Manager extends Department (child class)
+login()
+employee_id()
+details()
+
+Admin extends Department (child class)
+admin_details()
+
+
+Finanace extends Department (child class)
+login()
+salary()
+accounts()
+
+
+Task2 : Calc, scientific calc, programmer calc - implement complete inheritance(overriding,uniq methd...)
+
+	StandardCalculator
+
+		addition()
+		multiplication()
+		substraction()
+		division()
+
+	ScientificCalc extands StandardCalc
+
+		Matrices()
+		trigonometry()
+		functions()
+    Conversion()
+    
+
+	ProgrammerCalc extands StandardCalc
+
+		bitwise()
+		bitShift()
+
+
+Task1 : what if my child class has lesser access modifier private void walk()
+    It gives an error  walk() has private access  cannot override walk() in Primitives private void walk()
+     It has implications on the method’s visibility and accessibility. 
+
+     public class Parent {
+    public void display() {
+        System.out.println("Parent class method");
+    }
+}
+
+public class Child extends Parent {
+    private void display() {
+        System.out.println("Child class method");
+    }
+
+    public static void main(String[] args) {
+        Child child = new Child();
+        // Uncomment the line below to see the behavior:
+        // child.display(); // Compile-time error: display() has private access in Child
+    }
+}
+
+
+
+
+Task 3: Radio, Tv, Dvd Player - identify the Apt parent class and implement inheritance
+
+	ElectronicDevice
+		
+		off()
+		on()
+	audio()
+	Radio extands ElectronicDevice
+		
+		pause()
+    play()
+		tunefrequency()
+
+	Tv extands ElectronicDevice
+		
+		video()
+		changeChannel()
+		record()
+
+	DVDPlayer extands ElectronicDevice
+
+		fastforward()
+    skip()
+		playDVD()
+		insertDisk()
+
+
+		
